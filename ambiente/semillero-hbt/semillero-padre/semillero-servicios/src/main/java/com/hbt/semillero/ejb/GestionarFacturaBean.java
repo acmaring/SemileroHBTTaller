@@ -49,6 +49,9 @@ public class GestionarFacturaBean implements IGestionarFacturaLocal{
 	public void crearPedido(FacturaDTO nuevaFactura) {
 		Factura factura = null;
 		
+		
+		
+		em.persist(factura);
 	}
 
 	/** 
@@ -85,7 +88,11 @@ public class GestionarFacturaBean implements IGestionarFacturaLocal{
 	@Override
 	public void borrarPedido(String idFactura) {
 		// TODO Auto-generated method stub
-		
+		Factura factura = em.find(Factura.class, idFactura);
+		if (factura != null) {
+			em.remove(factura);
+		}
+	
 	}
 
 	/** 
