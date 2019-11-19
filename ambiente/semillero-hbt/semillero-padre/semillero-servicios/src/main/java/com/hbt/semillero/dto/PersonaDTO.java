@@ -11,7 +11,7 @@ package com.hbt.semillero.dto;
  */
 public class PersonaDTO {
 	private Long id;
-	private Integer numIdetnificacion;
+	private Integer numIdentificacion;
 	/**
 	 * Constructor de la clase.
 	 */
@@ -33,25 +33,25 @@ public class PersonaDTO {
 		this.id = id;
 	}
 	/**
-	 * Metodo encargado de retornar el valor del atributo numIdetnificacion
-	 * @return El numIdetnificacion asociado a la clase
+	 * Metodo encargado de retornar el valor del atributo numIdentificacion
+	 * @return El numIdentificacion asociado a la clase
 	 */
-	public Integer getNumIdetnificacion() {
-		return numIdetnificacion;
+	public Integer getNumIdentificacion() {
+		return numIdentificacion;
 	}
 	/**
-	 * Metodo encargado de modificar el valor del atributo numIdetnificacion
-	 * @param numIdetnificacion El nuevo numIdetnificacion a modificar.
+	 * Metodo encargado de modificar el valor del atributo numIdentificacion
+	 * @param numIdentificacion El nuevo numIdentificacion a modificar.
 	 */
-	public void setNumIdetnificacion(Integer numIdetnificacion) {
-		this.numIdetnificacion = numIdetnificacion;
+	public void setNumIdentificacion(Integer numIdetnificacion) {
+		this.numIdentificacion = numIdetnificacion;
 	}
 	/** 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "PersonaDTO [id=" + id + ", numIdetnificacion=" + numIdetnificacion + "]";
+		return "PersonaDTO [id=" + id + ", numIdentificacion=" + numIdentificacion + "]";
 	}
 	/** 
 	 * @see java.lang.Object#hashCode()
@@ -61,7 +61,7 @@ public class PersonaDTO {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((numIdetnificacion == null) ? 0 : numIdetnificacion.hashCode());
+		result = prime * result + ((numIdentificacion == null) ? 0 : numIdentificacion.hashCode());
 		return result;
 	}
 	/** 
@@ -81,10 +81,10 @@ public class PersonaDTO {
 				return false;
 		} else if (!id.equals(other.id))
 			return false;
-		if (numIdetnificacion == null) {
-			if (other.numIdetnificacion != null)
+		if (numIdentificacion == null) {
+			if (other.numIdentificacion != null)
 				return false;
-		} else if (!numIdetnificacion.equals(other.numIdetnificacion))
+		} else if (!numIdentificacion.equals(other.numIdentificacion))
 			return false;
 		return true;
 	}

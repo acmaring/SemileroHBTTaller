@@ -66,6 +66,7 @@ public class GestionarFacturaBean implements IGestionarFacturaLocal{
 	@Override
 	public FacturaDTO consultarPedido(String id) {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
