@@ -65,4 +65,15 @@ public interface IGestionarComicLocal {
 	 * @return
 	 */
 	public List<ComicDTO> consultarComics();
+	
+	/**
+	 * 
+	 * Metodo encargado de consultar la cantidad de comics disponibles para la venta
+	 * <b>Caso de Uso</b>
+	 * @author camilo
+	 * 
+	 * @param comics
+	 * @return
+	 */
+	public Long consultarInventarioDisponible(ComicDTO comic);
 }

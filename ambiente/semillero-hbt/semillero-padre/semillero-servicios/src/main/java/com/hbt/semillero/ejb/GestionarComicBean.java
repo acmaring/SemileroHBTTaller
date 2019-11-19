@@ -101,6 +101,20 @@ public class GestionarComicBean implements IGestionarComicLocal {
 		}
 		return resultadosComicDTO;
 	}
+	
+	/**
+	 * 
+	 * Metodo encargado de Consultar el inventario disponible de un comic
+	 * <b>Caso de Uso</b>
+	 * @author camilo
+	 * 
+	 * @param comic
+	 * @return
+	 */
+	public Long consultarInventarioDisponible(ComicDTO comic) {
+		return comic.getCantidad();
+		
+	};
 
 	/**
 	 * 
